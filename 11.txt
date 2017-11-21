@@ -1,2 +1,2 @@
 hi then 
-first time i learn how to use svn and git,i successfully commit my file to Github finally,it's goddamn cool!
+For first time i learn how to use svn and git,i successfully commit my file to Github finally,it's goddamn cool!
