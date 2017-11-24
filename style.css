@@ -12,7 +12,7 @@ body{background-color: rgb(104,205,213);
 .box1>img{margin:0;
     padding:0;
     position:relative;
-    top:110px;}
+    top:100px;}
 .word{
     margin:0;
     text-align:left;
@@ -34,7 +34,7 @@ body{background-color: rgb(104,205,213);
     top:400px;}
 .word1{text-align:center;
     line-height:1.8em;
-    font-size:1.4em;
+    font-size:1.2em;
     font-family:"Hiragino Sans GB","Microsoft Yahei",serif;
     position:relative;
     top:16px;
@@ -42,7 +42,7 @@ body{background-color: rgb(104,205,213);
     color:#fff;}
 .word2{text-align:center;
     line-height:1.8em;
-    font-size:1.4em;
+    font-size:1.2em;
     font-family:"Hiragino Sans GB","Microsoft Yahei",serif;
     position:relative;
     top:16px;
