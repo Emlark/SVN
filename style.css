@@ -179,9 +179,11 @@ header {
         justify-content: center;
         align-items: center;
         -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
         cursor: pointer;
         font-size: 2.5em;
         -webkit-border-radius: 6px;
+        border-radius: 6px;
         text-decoration: none;
         outline: none;
 }
