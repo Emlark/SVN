@@ -35,6 +35,7 @@ header p{
     font-size:.2rem;
     text-align:center;
     color:#fff;
+    white-space: nowrap;
 }
 
 .pgleft{float:left;
@@ -83,7 +84,7 @@ main{
 
 .condition{
     background-color:#fff;
-    height:1rem;
+    min-height:1rem;
     width:100%;
     border-top:1px solid #ddd;
 }
@@ -127,6 +128,7 @@ background-color:rgba(41,189,224,.5);}
     display:flex;
     justify-content:center;
     align-items:center;
+
 }
 
 .again{font-size:.25rem;
@@ -138,6 +140,8 @@ background-color:rgba(41,189,224,.5);}
     justify-content:center;
     align-items:center;
     border-radius:8px;
+    overflow:hidden;
+    white-space: nowrap;
 }
 
 .upload{font-size:.25rem;
@@ -149,4 +153,6 @@ background-color:rgba(41,189,224,.5);}
     justify-content:center;
     align-items:center;
     border-radius:8px;
+    white-space: nowrap;
+    overflow:hidden;
 }
