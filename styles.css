@@ -51,22 +51,26 @@ main{
 
 .vic{
     display:flex;
-    justify-content: center;
+    flex-direction: column;
     align-items:center;
     width:100%;
     padding:.1rem;
+
 }
 
 .chara-num{
     display:flex;
     margin:.08rem 0;
+    align-items:center;
+
 }
 
 .chara-box{
     flex: 0 0 33.3%;
-    align-items:center;
     font-size:.14rem;
     color:#fff;
+    white-space:nowrap;
+
 
 }
 .word1{
