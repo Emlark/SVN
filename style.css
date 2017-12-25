@@ -274,20 +274,16 @@ header{
     line-height:.3rem;
 }
 .display-0 {
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-    width:100%;
+    margin:0 .1rem;
+    background-color:#fff;
+    border:1px solid  #F6F6F6;
+    box-shadow: 1px 1px 2px  #C2C2C2;
+    height:100%;
 }
 
 .member{
     margin:0;
-    width:22%;
     min-height:3.4rem;
-    border:1px solid  #F6F6F6;
-    box-shadow: 1px 1px 2px  #C2C2C2;
-    background-color:#fff;
-
 }
 
 .round{
