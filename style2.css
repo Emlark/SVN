@@ -134,7 +134,6 @@ main{
     margin-top:0;
     margin-bottom:0;
     min-height:.5rem;
-
 }
 
 
@@ -142,7 +141,7 @@ main{
 .word-3-0{
     height:100%;
     width:100%;
-    border-bottom:1px solid #EDF1F2;  display: flex;
+    border-bottom:1px solid #EDF1F2;
 }
 
 .word-3-1{
@@ -150,6 +149,7 @@ main{
     color:#fff;
     padding:0;
     width:30px;
+
 }
 
 .word-4{
