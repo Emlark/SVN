@@ -210,9 +210,9 @@ main{
 }
 
 .word-2{
-    color: #82D0B0;
-}
 
+color: #82D0B0;
+}
 .word-1:hover{
     text-decoration: none;
     color:#000000;
