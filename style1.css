@@ -68,7 +68,19 @@ main{
 
 }
 
+.bg-img{
+    background-image:url(https://github.com/Emlark/SVN/blob/master/images/战略合作企业_03.png?raw=true);
+    background-repeat:no-repeat;
+    background-size:.84rem  .38rem;
+    background-position:.15rem .18rem;
+}
 
+
+@media (max-width: 500px) {
+    .bg-img {
+        background-image:none;
+    }
+}
 
 .nav-2{
     height:.7rem;
