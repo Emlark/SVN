@@ -377,14 +377,14 @@ header{
 
 
 
-@media screen and (min-width: 1201px) {
+@media (min-width: 1201px) {
     .bottom-0-2 {
         display:flex;
         justify-content: flex-end;
         align-items: flex-end;
     }
 }
-@media screen and (max-width: 1200px) {
+@media  (min-width: 992px) {
     .bottom-0-2 {
         display:flex;
         justify-content: flex-end;
@@ -393,13 +393,13 @@ header{
 }
 
 
-@media screen and (max-width: 900px) {
+@media (min-width: 768px) {
 .bottom-0-2 {
     display:flex;
 
 }
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .bottom-0-2 {
         display:flex;
     }
