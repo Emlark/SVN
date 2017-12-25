@@ -377,10 +377,39 @@ header{
 
 .bottom-0-2{
     height:1.7rem;
-    display:flex;
-    justify-content: flex-end;
-    align-items: flex-end;
 }
+
+
+
+@media screen and (min-width: 1201px) {
+    .bottom-0-2 {
+        display:flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .bottom-0-2 {
+        display:flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+.bottom-0-2 {
+    display:flex;
+
+}
+}
+@media screen and (max-width: 500px) {
+    .bottom-0-2 {
+        display:flex;
+    }
+}
+
+
 
 .bottom-1{
     position: relative;
