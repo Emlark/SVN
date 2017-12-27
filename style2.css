@@ -166,12 +166,131 @@ main{
 
 
 
+.items{
+    min-height:3.7rem;
+    margin:.08rem;
+    border:1px solid #e2e2e2;
+
+    background-color:#fff;
+}
+
+.first-line{
+    height:1.46rem;
+    display:flex;
+    border-bottom:1px solid #e2e2e2;
+}
+
+
+.img-1{
+    padding:.1rem;
+}
+
+.img-2{
+    zoom:.9;
+}
+
+@media (max-width: 500px) {
+    .img-2 {
+        display:inline-block;
+        height:auto;
+        max-width:90%;
+    }
+}
+.paragraph{
+    width:60%;
+    padding:.1rem;
+}
+
+.paragraph-1{
+    width:60%;
+    padding:.1rem;
+    font-size:.13rem;
+}
+
+.tleft{
+    border-bottom:1px solid #e2e2e2;
+    border-right:1px solid #e2e2e2;
+}
+
+.tright{
+    border-bottom:1px solid #e2e2e2;
+}
+
+
+.ttop{
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+
+.tbottom{
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+
+.half{
+    width:50%;
+    padding:.1rem;
+}
+
+
+.table-all{
+    border:1px solid #e2e2e2;
+    margin-top:.3rem;
+    box-shadow:1px 1px 2px #000;
+    border-radius:5px;
+    position:relative;
+    overflow:hidden;
+}
+
+
+table{
+    background-color:#fff;
+    width:100%;
+    font-size:.12rem;
+}
+
+.table-1{
+    width:70%;
+    padding:.1rem;
+}
+
+.table-2{
+    width:100%;
+    padding:.1rem;
+}
 
 
 
 
+.table-hover{
+    position:absolute;
+    top:0;
+    right:-97%;
+    height:100%;
+    width:100%;
+    transition:all 0.5s ease;
+    border-radius:5px;
+}
 
+.table-all:hover .table-hover{
+    right:0;
+    background-color:rgba(0,0,0,0.7);
+}
 
+.table-hover-1{
+    height:30%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    color:#fff;
+}
+
+.table-hover-2{
+    text-align:center;
+    color:#fff;
+}
 
 
 .word-7{
@@ -227,26 +346,31 @@ main{
 
 
 .bottom-0-1{
-    height:1.7rem;
-    display:flex;
     padding:.3rem .3rem .3rem 0;
-    flex-direction:column;
-    justify-content:space-between;
+
 
 }
-
-
 
 
 .bottom-0-2{
     height:1.7rem;
 }
 
+
+
 @media (min-width: 1201px) {
     .bottom-0-2 {
         display:flex;
         justify-content: flex-end;
         align-items: flex-end;
+
+    }
+    .bottom-0-1{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        height:1.7rem;
+
     }
 }
 @media  (min-width: 992px) {
@@ -255,20 +379,30 @@ main{
         justify-content: flex-end;
         align-items: flex-end;
     }
+    .bottom-0-1{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        height:1.7rem;
+    }
 }
 
 
 @media (min-width: 768px) {
     .bottom-0-2 {
         display:flex;
-
     }
+
 }
 @media (max-width: 500px) {
     .bottom-0-2 {
         display:flex;
     }
+
 }
+
+
+
 
 
 
