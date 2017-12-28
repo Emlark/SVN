@@ -61,39 +61,16 @@ main{
 
 
 .nav-1{
-    height:.7rem;
-    width:100%;
-    background-color:#29B078;
-    overflow:hidden;
-
-}
-
-.bg-img{
-    background-image:url(https://github.com/Emlark/SVN/blob/master/images/战略合作企业_03.png?raw=true);
-    background-repeat:no-repeat;
-    background-size:.84rem  .38rem;
-    background-position:.15rem .18rem;
-}
-
-
-@media (max-width: 500px) {
-    .bg-img {
-        background-image:none;
-    }
-}
-
-.nav-2{
-    height:.7rem;
     background-color:#29B078;
 }
+
 
 .nav-3{
-    width:.7rem;
     height:.7rem;
-    line-height:.7rem;
+    line-height:.7rem!important;
     margin:0;
     padding:0!important;
-    color:#fff;
+    color:#fff!important;
     text-align:center;
 }
 .nav-3:hover{
@@ -103,6 +80,47 @@ main{
     transition-duration:.4s;
     border-radius:0;
 }
+
+
+
+
+.navbar-nav {
+    margin: 0;
+}
+@media(min-width:768px){
+    .nav-3 {
+        width:.7rem;
+    }
+    .navbar-nav {
+        float: right;
+        margin: 0;
+    }
+
+}
+
+
+.navbar-default .navbar-toggle{
+    border-color: transparent;
+}
+
+
+.icon-bar {
+    background-color: #fff!important;
+}
+
+.navbar-toggle {
+    background-color: transparent!important;
+    top:.1rem;
+    margin-right:0!important;
+}
+
+
+.navbar-header{
+    height:.7rem;
+    line-height:.7rem;
+}
+
+
 
 
 .left-list-title

@@ -47,25 +47,18 @@ header{
 }
 
 
+
 .nav-1{
-    height:.7rem;
-    width:100%;
     background-color:#29B078;
-    overflow:hidden;
 }
 
-
-.nav-2{
-    height:.7rem;
-}
 
 .nav-3{
-    width:.7rem;
     height:.7rem;
-    line-height:.7rem;
+    line-height:.7rem!important;
     margin:0;
     padding:0!important;
-    color:#fff;
+    color:#fff!important;
     text-align:center;
 }
 .nav-3:hover{
@@ -75,6 +68,47 @@ header{
     transition-duration:.4s;
     border-radius:0;
 }
+
+
+
+
+.navbar-nav {
+    margin: 0;
+}
+@media(min-width:768px){
+    .nav-3 {
+        width:.7rem;
+    }
+    .navbar-nav {
+        float: right;
+        margin: 0;
+    }
+
+}
+
+
+.navbar-default .navbar-toggle{
+    border-color: transparent;
+}
+
+
+.icon-bar {
+    background-color: #fff!important;
+}
+
+.navbar-toggle {
+    background-color: transparent!important;
+    top:.1rem;
+    margin-right:0!important;
+}
+
+
+.navbar-header{
+    height:.7rem;
+    line-height:.7rem;
+}
+
+
 
 
 .feature{
@@ -159,14 +193,11 @@ header{
 
 
 .learnway{
-    /*display:flex;*/
-    /*align-items:center;*/
     margin:.5rem 0;
 
 }
 
 .learn-0{
-    /*flex:0 0 25%;*/
     display:flex;
     align-items:center;
     margin:.1rem 0;
