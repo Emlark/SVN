@@ -108,7 +108,10 @@ header{
     line-height:.7rem;
 }
 
-
+.row{
+    margin-left:0;
+    margin-right:0;
+}
 
 
 .feature{
@@ -220,6 +223,14 @@ header{
     font-family:serif;
     color: #82D0B0;
 }
+
+
+.cir:before{
+    content:'';
+    width:27px;
+    height:26px;
+}
+
 
 .word-3{
     width:50%;
@@ -385,7 +396,7 @@ header{
 }
 
 .bottom-0-1{
-    padding:.3rem .3rem .3rem 0;
+    padding:.3rem;
 
 
 }
