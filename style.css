@@ -114,17 +114,9 @@ header{
 }
 
 
-.feature{
-    margin-top:1rem;
-    width:100%;
-}
+
 
 .feature-1{
-    height:100%;
-
-}
-
-.feature-1-0{
     height:100%;
     width:100%;
     margin: 0;
@@ -195,10 +187,6 @@ header{
 }
 
 
-.learnway{
-    margin:.5rem 0;
-
-}
 
 .learn-0{
     display:flex;
@@ -225,11 +213,6 @@ header{
 }
 
 
-.cir:before{
-    content:'';
-    width:27px;
-    height:26px;
-}
 
 
 .word-3{
@@ -336,6 +319,8 @@ header{
     height:8px;
     border-radius:4px;
     margin:0 .02rem;
+    background-color:#29B078;
+    box-shadow: 1px 1px 2px  #C2C2C2;
 }
 
 .round2{
@@ -344,6 +329,7 @@ header{
     border-radius:4px;
     margin:0 .02rem;
     border:1px solid  #F8F8F8;
+    background-color:#fff;
     box-shadow: 1px 1px 2px  #C2C2C2;
 }
 
@@ -397,16 +383,12 @@ header{
 
 .bottom-0-1{
     padding:.3rem;
-
-
 }
 
 
 .bottom-0-2{
     height:1.7rem;
 }
-
-
 
 @media (min-width: 1201px) {
     .bottom-0-2 {
@@ -452,10 +434,6 @@ header{
 }
 
 
-
-
-
-
 .bottom-1{
     position: relative;
     bottom:0;
@@ -465,44 +443,6 @@ header{
     background-color:#29B078;
     min-height: .3rem;
 }
-
-
-
-
-.col-xs-1-1-0,
-.col-sm-1-1-0,
-.col-md-1-1-0,
-.col-lg-1-1-0 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.col-xs-1-1-0 {
-    width: 10%;
-    float: left;
-}
-
-@media (min-width: 768px) {
-    .col-sm-1-1-0 {
-        width: 10%;
-        float: left;
-    }
-}
-@media (min-width: 992px) {
-    .col-md-1-1-0 {
-        width: 10%;
-        float: left;
-    }
-}
-@media (min-width: 1200px) {
-    .col-lg-1-1-0 {
-        width: 10%;
-        float: left;
-    }
-}
-
 
 .col-xs-5,
 .col-sm-5,
@@ -537,3 +477,39 @@ header{
         float: left;
     }
 }
+
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-10 {
+    width: 10%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-10 {
+        width: 10%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-10 {
+        width: 10%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-10 {
+        width: 10%;
+        float: left;
+    }
+}
+
+
