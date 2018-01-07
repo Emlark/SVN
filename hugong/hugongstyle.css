@@ -1,0 +1,156 @@
+.flex-center, header .personal, .topp, .topp .photo, .little, .introduce, .list, footer .half1, footer .half2, button {
+  display: flex;
+  align-items: center; }
+
+.btn-style, header .left, button {
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  border: 0; }
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 625%;
+  overflow: auto; }
+
+body {
+  margin: 0;
+  padding-bottom: 65px; }
+
+header {
+  top: 0;
+  background-color: #5cc0cd;
+  height: 40px;
+  margin: 0;
+  padding: 3px 4px;
+  color: #fff;
+  display: flex;
+  position: relative; }
+  header .left {
+    position: absolute;
+    top: 25%;
+    left: 9px;
+    font-size: 0.16rem;
+    color: #fff; }
+  header .personal {
+    font-size: 0.2rem;
+    color: #fff;
+    font-weight: bold;
+    justify-content: center;
+    margin: 0 auto; }
+
+.topp {
+  margin: 0;
+  padding: 0;
+  height: 163px;
+  width: 100%;
+  background: url("https://github.com/Emlark/SVN/blob/awesome/src/task5-1_06.png?raw=true") no-repeat 0 0;
+  background-size: 100% 100%; }
+  .topp .photo {
+    height: 140px;
+    width: 120px;
+    justify-content: center; }
+  .topp .word1 {
+    font-size: 0.16rem;
+    color: #fff;
+    margin: 5px 5px 5px 0; }
+  .topp .word2 {
+    font-size: 0.14rem;
+    margin: 5px 5px 5px 0;
+    display: flex; }
+  .topp .word3 {
+    color: #fff; }
+
+.little {
+  padding: 0 2px; }
+
+.introduce {
+  box-sizing: border-box;
+  height: 51px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #e1e5e7; }
+  .introduce .skill {
+    min-width: 48px;
+    font-size: 0.14rem;
+    margin: 10px;
+    padding: 0 5px;
+    border-left: 3px solid #5cc0cd; }
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.list {
+  font-size: 0.14rem;
+  box-sizing: border-box;
+  margin: 0 10px;
+  padding: 0;
+  min-height: 51px;
+  width: 100%;
+  border-bottom: 1px solid #ccc; }
+  .list .list1 {
+    margin: 15px 0;
+    padding: 0 7px;
+    display: flex; }
+  .list .list2 {
+    min-width: 56px;
+    color: #ccc;
+    margin-right: 10px;
+    padding: 2px 11px;
+    border-right: 1px solid #ccc; }
+  .list .list3 {
+    margin: 15px 0;
+    padding-right: 10px;
+    height: 100%;
+    line-height: 20px; }
+
+footer {
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; }
+  footer .half1, footer .half2 {
+    box-sizing: border-box;
+    flex: 0 0 50%;
+    height: 65px;
+    justify-content: center; }
+
+button {
+  background-color: #5cc0cd;
+  color: #fff;
+  justify-content: center;
+  -webkit-transition-duration: 0.4s;
+  font-size: 0.2rem;
+  -webkit-border-radius: 6px; }
+
+.message {
+  background-color: #fff;
+  height: 45px;
+  width: 97%;
+  color: #5cc0cd;
+  border: 2px solid #5cc0cd; }
+  .message:hover {
+    background-color: #5cc0cd;
+    color: #fff; }
+
+.phone {
+  background-color: #5cc0cd;
+  height: 45px;
+  width: 97%;
+  color: #fff; }
+  .phone:hover {
+    background-color: #fff;
+    color: #5cc0cd; }
+
+/*# sourceMappingURL=hugongstyle.css.map */

@@ -1,0 +1,235 @@
+$lg-word:.2rem;
+$md-word:.16rem;
+$sm-word:.14rem;
+$color-blue:rgb(92,192,205);
+$border-grey:rgb(225,229,231);
+$border-deep-grey:#ccc;
+
+.flex-center{
+  display:flex;
+  align-items:center;
+}
+
+.btn-style{
+  cursor:pointer;
+  outline:none;
+  text-decoration:none;
+  border:0;
+}
+
+html{
+  margin:0;
+  padding:0;
+  font-size:625%;
+  overflow:auto;
+}
+
+body{
+  margin:0;
+  padding-bottom:65px;
+}
+
+
+header{
+  top:0;
+  background-color:$color-blue;
+  height:40px;
+  margin:0;
+  padding:3px 4px;
+  color:#fff;
+  display:flex;
+  position:relative;
+
+      .left{
+        position:absolute;
+        top:25%;
+        left:9px;
+        font-size:$md-word;
+        color:#fff;
+        @extend .btn-style;
+      }
+
+
+      .personal{
+        font-size:$lg-word;
+        color:#fff;
+        font-weight:bold;
+        @extend .flex-center;
+        justify-content:center;
+        margin:0 auto;
+      }
+
+}
+
+.topp{
+  margin: 0;
+  padding: 0;
+  height: 163px;
+  width: 100%;
+  background:url("https://github.com/Emlark/SVN/blob/awesome/src/task5-1_06.png?raw=true")no-repeat 0 0;
+  background-size:100% 100%;
+  @extend .flex-center;
+
+
+          .photo{
+            height:140px;
+            width:120px;
+            @extend .flex-center;
+            justify-content:center;
+          }
+
+
+          .word1{
+            font-size:$md-word;
+            color:#fff;
+            margin:5px 5px 5px 0;
+          }
+
+          .word2{
+            font-size:$sm-word;
+            margin:5px 5px 5px 0;
+            display:flex;
+          }
+
+
+          .word3{
+            color:#fff;
+          }
+
+}
+
+.little{
+  @extend .flex-center;
+  padding:0 2px;}
+
+
+.introduce{
+  box-sizing:border-box;
+  height:51px;
+  width:100%;
+  margin:0;
+  padding: 0;
+  border-bottom:1px solid $border-grey;
+  @extend .flex-center;
+
+
+      .skill{
+        min-width:48px;
+        font-size:$sm-word;
+        margin:10px;
+        padding:0 5px;
+        border-left: 3px solid $color-blue;
+      }
+}
+
+.container{
+  box-sizing:border-box;
+  width:100%;
+  margin:0;
+  padding: 0;
+
+}
+
+
+
+
+.list{
+  font-size:$sm-word;
+  box-sizing:border-box;
+  margin:0 10px;
+  padding:0;
+  min-height:51px;
+  width:100%;
+  border-bottom:1px solid $border-deep-grey;
+  @extend .flex-center;
+
+
+        .list1{
+          margin:15px 0;
+          padding:0 7px;
+          display:flex;
+        }
+
+        .list2{
+          min-width:56px;
+          color:$border-deep-grey;
+          margin-right:10px;
+          padding:2px 11px;
+          border-right:1px solid $border-deep-grey;
+        }
+
+        .list3{
+          margin:15px 0;
+          padding-right:10px;
+          height:100%;
+          line-height:20px;
+        }
+}
+
+
+footer{
+  position:fixed;
+  box-sizing:border-box;
+  bottom:0;
+  height: 65px;
+  width:100%;
+  background-color:#fff;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:space-around;
+
+
+      .half1,.half2{
+        box-sizing:border-box;
+        flex:0 0 50%;
+        height:65px;
+        @extend .flex-center;
+        justify-content:center;
+      }
+}
+
+button{
+  background-color:$color-blue;
+  color:#fff;
+  @extend .flex-center;
+  justify-content:center;
+  -webkit-transition-duration:0.4s;
+  font-size:$lg-word;
+  -webkit-border-radius:6px;
+  @extend .btn-style;
+}
+
+
+
+.message{
+  background-color:#fff;
+  height:45px;
+  width:97%;
+  color:$color-blue;
+  border:2px solid $color-blue;
+
+
+
+   &:hover{
+      background-color:$color-blue;
+      color:#fff;
+    }
+
+}
+
+
+.phone {
+  background-color: $color-blue;
+  height: 45px;
+  width: 97%;
+  color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: $color-blue;
+  }
+
+}
+
+
