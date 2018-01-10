@@ -39,15 +39,17 @@ header p{
 }
 
 .pgleft{float:left;
-    padding-top:.1rem;}
+    padding-top:.12rem;}
 .pgright{float:right;
-    padding-top:.1rem;}
+    padding-top:.13rem;}
 
 main{
     border-top:1px solid #74D4EB;
 }
 
-
+.container{
+    margin:0 auto;
+}
 
 .vic{
     display:flex;
