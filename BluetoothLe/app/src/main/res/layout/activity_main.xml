@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="com.work.bluetoothle.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Bluetooth!" />
+
+    <Button
+        android:id="@+id/open_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_device"/>
+
+    <Button
+        android:id="@+id/chuankou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="串口收发"/>
+    <Button
+        android:id="@+id/changzhen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="长震"/>
+    <Button
+        android:id="@+id/nostop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="不要停"/>
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停下来"/>
+
+<TextView
+    android:id="@+id/walk_counting"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="走了多少步"
+    android:gravity="center"
+    android:textSize="20dp"
+    />
+
+    <TextView
+        android:id="@+id/energy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电池容量"
+        android:gravity="center"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="连接状态 ：未连接"
+        android:gravity="center"
+        android:textSize="20dp"
+        />
+<ListView
+    android:id="@+id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    ></ListView>
+</LinearLayout>
