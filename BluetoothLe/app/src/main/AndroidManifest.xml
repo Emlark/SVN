@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Send"/>
+        <service android:name=".BluetoothLeService"/>
     </application>
 
 </manifest>

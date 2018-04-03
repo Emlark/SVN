@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
     private  static final long  SCAN_PERIOD=10000;
 
     private  Boolean mScanning;
-    private  Boolean connected;
+    private  Boolean selected;
     private   String myDeviceName;
     private  String myDeviceAddress;
 
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         nostop = (Button)findViewById(R.id.nostop);
         stop=(Button)findViewById(R.id.stop);
        mScanning=false;
-        connected=false;
+        selected=false;
             list = (ListView)findViewById(R.id.list);
           myAdapter = new MyAdapter(MainActivity.this , deviceList);
         walk_counting = (TextView)findViewById(R.id.walk_counting);
@@ -147,7 +147,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                     bluetoothDevice = deviceList.get(position);
                     myDeviceName = bluetoothDevice.getName();
                     myDeviceAddress = bluetoothDevice.getAddress();
-
+                    connect.setText("已选择"+myDeviceName);
+                    selected=true;
 //                    bluetoothGatt = bluetoothDevice.connectGatt(MainActivity.this,false,gattcallback);
 //                    connect.setText("连接"+bluetoothDevice.getName()+"中....");
                 }
@@ -165,7 +166,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
             break;
            case  R.id.chuankou:
-               if(connected){
+               if(selected){
                   Send();
                }else {
                    Toast.makeText(this,"设备未连接",Toast.LENGTH_SHORT).show();
@@ -256,86 +257,7 @@ runOnUiThread(new Runnable() {
             }
         }
     };
-    private BluetoothGattCallback gattcallback = new BluetoothGattCallback() {
-        @Override
-        public void onConnectionStateChange(BluetoothGatt gatt, int status, final int newState) {
-            super.onConnectionStateChange(gatt, status, newState);
 
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    String status;
-                    switch (newState){
-                        case BluetoothGatt.STATE_CONNECTED:
-                            connect.setText("已连接");
-                            bluetoothGatt.discoverServices();
-                            connected = true;
-                            break;
-                        case BluetoothGatt.STATE_CONNECTING:
-                            connect.setText("正在连接");
-                            break;
-                        case BluetoothGatt.STATE_DISCONNECTED:
-                            connect.setText("已断开");
-                            connected=false;
-                            break;
-                        case BluetoothGatt.STATE_DISCONNECTING:
-                            connect.setText("断开中");
-                            break;
-                        default:break;
-                    }
-                }
-            });
-        }
-
-
-        @Override
-        public void onServicesDiscovered(BluetoothGatt gatt, int status) {
-            super.onServicesDiscovered(gatt, status);
-        }
-
-        @Override
-        public void onCharacteristicRead(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
-            super.onCharacteristicRead(gatt, characteristic, status);
-        }
-
-
-        @Override
-        public void onCharacteristicWrite(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
-            super.onCharacteristicWrite(gatt, characteristic, status);
-        }
-
-
-        @Override
-        public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {
-            super.onCharacteristicChanged(gatt, characteristic);
-        }
-
-        @Override
-        public void onDescriptorWrite(BluetoothGatt gatt, BluetoothGattDescriptor descriptor, int status) {
-            super.onDescriptorWrite(gatt, descriptor, status);
-        }
-
-        @Override
-        public void onDescriptorRead(BluetoothGatt gatt, BluetoothGattDescriptor descriptor, int status) {
-            super.onDescriptorRead(gatt, descriptor, status);
-        }
-
-        @Override
-        public void onReliableWriteCompleted(BluetoothGatt gatt, int status) {
-            super.onReliableWriteCompleted(gatt, status);
-        }
-
-        @Override
-        public void onMtuChanged(BluetoothGatt gatt, int mtu, int status) {
-            super.onMtuChanged(gatt, mtu, status);
-        }
-
-        @Override
-        public void onReadRemoteRssi(BluetoothGatt gatt, int rssi, int status) {
-            super.onReadRemoteRssi(gatt, rssi, status);
-
-        }
-    };
     class MyAdapter extends BaseAdapter {
         private ArrayList<BluetoothDevice> myList;
         private LayoutInflater mInflater;
