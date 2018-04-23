@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BottomBar</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="scan_title">Scan_device</string>
+    <string name="error_BLE">error BLE</string>
+    <string name="menu_connect">连接</string>
+    <string name="menu_disconnect">断开</string>
+    <string name="menu_scan">扫描</string>
+    <string name="menu_stop">停止</string>
+    <string name="open_device">开启</string>
+    <string name="no_data">No Connection</string>
+    <string name="ble_not_supported">设备不支持BLE</string>
+
+    <string name="send">Send</string>
+
+
+    <string name="turn_on">点灯</string>
+    <string name="turn_off">熄灯</string>
+
+    <string name="unknown_devce">unknown device</string>
+</resources>
